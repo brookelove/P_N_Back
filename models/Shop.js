@@ -18,6 +18,10 @@ const shopSchema = new Schema({
       ref: "Artist",
     },
   ],
+  owner: {
+    type: Schema.Types.ObjectId,
+    ref: "Artist",
+  },
 });
 
 const Shop = model("Shop", shopSchema);

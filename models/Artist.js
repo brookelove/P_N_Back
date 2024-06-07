@@ -65,6 +65,12 @@ const artistSchema = new Schema(
         ref: "Work",
       },
     ],
+    licenses: [
+      {
+        type: Schema.Types.ObjectId,
+        ref: "License",
+      },
+    ],
     friends: [
       {
         type: Schema.Types.ObjectId,

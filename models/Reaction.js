@@ -1,16 +1,20 @@
 const { Schema, Types } = require("mongoose");
 const dateFormat = require("../utils/dateFormat");
 
-const commentSchema = new Schema(
+const reactionSchema = new Schema(
   {
-    commentId: {
+    reactionId: {
       type: Schema.Types.ObjectId,
       default: () => new Types.ObjectId(),
     },
-    commentBody: {
+    reactionBody: {
       type: String,
       required: true,
       maxlength: 280,
+    },
+    username: {
+      type: String,
+      required: true,
     },
     createdAt: {
       type: Date,
@@ -25,6 +29,5 @@ const commentSchema = new Schema(
     id: false,
   }
 );
-const Comment = model("Comment", commentSchema);
 
-module.exports = Comment;
+module.exports = reactionSchema;

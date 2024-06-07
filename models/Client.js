@@ -41,6 +41,12 @@ const clientSchema = new Schema(
         ref: "Notes",
       },
     ],
+    comments: [
+      {
+        type: Schema.Types.ObjectId,
+        ref: "Comment",
+      },
+    ],
   },
   {
     toJSON: {
