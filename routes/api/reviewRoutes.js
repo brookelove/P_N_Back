@@ -5,7 +5,7 @@ const {
   createReview,
   updateReview,
   deleteReview,
-} = require("../../controllers/reviews-controller");
+} = require("../../controllers/review-controllers");
 
 // /api/reviews
 router.route("/").get(getReviews).post(createReview);

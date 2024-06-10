@@ -7,7 +7,7 @@ const {
   deleteArtist,
   addFriend,
   removeFriend,
-} = require("../../controllers/artist-controller");
+} = require("../../controllers/artist-controllers");
 
 // /api/artists
 router.route("/").get(getArtists).post(createArtist);

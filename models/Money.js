@@ -9,19 +9,19 @@ const moneySchema = new Schema({
     ref: "Client",
   },
   price: {
-    type: Float,
+    type: Number,
     required: true,
   },
   tip: {
-    type: Float,
+    type: Number,
     required: true,
   },
   total: {
-    type: Float,
+    type: Number,
     required: true,
   },
   percentage: {
-    type: Float,
+    type: Number,
     required: true,
   },
   work: {

@@ -5,7 +5,7 @@ const {
   createLicense,
   updateLicense,
   deleteLicense,
-} = require("../../controllers/license-controller");
+} = require("../../controllers/license-controllers");
 
 // /api/license
 router.route("/").get(getLicense).post(createLicense);

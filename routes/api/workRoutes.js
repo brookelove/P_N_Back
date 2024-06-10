@@ -5,7 +5,7 @@ const {
   createWork,
   updateWork,
   deleteWork,
-} = require("../../controllers/work-controller");
+} = require("../../controllers/work-controllers");
 
 // /api/work
 router.route("/").get(getWorks).post(createWork);

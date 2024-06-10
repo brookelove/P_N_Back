@@ -1,13 +1,13 @@
 const router = require("express").Router();
 const {
-  getForm,
+  getForms,
   getSingleForm,
   createForm,
   updateForm,
-} = require("../../controllers/form-controller");
+} = require("../../controllers/form-controllers");
 
 // /api/form
-router.route("/").get(getForm).post(createForm);
+router.route("/").get(getForms).post(createForm);
 
 // /api/Form/:formId
 router.route("/:formId").get(getSingleForm).put(updateForm);

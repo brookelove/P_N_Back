@@ -7,7 +7,7 @@ const {
   deleteComment,
   addReaction,
   removeReaction,
-} = require("../../controllers/comment-controller");
+} = require("../../controllers/comment-controllers");
 
 // /api/comment
 router.route("/").get(getComment).post(createComment);

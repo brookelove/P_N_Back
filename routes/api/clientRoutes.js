@@ -1,16 +1,16 @@
 const router = require("express").Router();
 const {
-  getClient,
+  getClients,
   getSingleClient,
   createClient,
   updateClient,
   deleteClient,
   addFriend,
   removeFriend,
-} = require("../../controllers/client-controller");
+} = require("../../controllers/client-controllers");
 
 // /api/client
-router.route("/").get(getClient).post(createClient);
+router.route("/").get(getClients).post(createClient);
 
 // /api/client/:clientId
 router

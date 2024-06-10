@@ -5,7 +5,7 @@ const {
   createMoney,
   updateMoney,
   deleteMoney,
-} = require("../../controllers/money-controller");
+} = require("../../controllers/money-controllers");
 
 // /api/money
 router.route("/").get(getMoney).post(createMoney);

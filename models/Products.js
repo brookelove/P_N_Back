@@ -9,7 +9,7 @@ const productSchema = new Schema({
     ref: "Artist",
   },
   price: {
-    type: Float,
+    type: Number,
     required: true,
   },
   quantity: {
@@ -17,7 +17,7 @@ const productSchema = new Schema({
     required: true,
   },
   total: {
-    type: Float,
+    type: Number,
     required: true,
   },
   purchased_from: {
